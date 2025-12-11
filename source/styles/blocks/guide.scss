@@ -42,45 +42,8 @@
   margin-right: 20px;
 }
 
-/* icons */
-
-/* иконка листа */
-.guide__item--leaf .square::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-  background: url("../../images/guide/icon-leaf.svg") no-repeat center center;
-  background-size: contain;
-}
-
-/* иконка стакана */
-.guide__item--glass .square::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-  background: url("../../images/guide/icon-glass.svg") no-repeat center center;
-  background-size: contain;
-}
-
-/* иконка столовые приборы */
-.guide__item--cutlery .square::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-  background: url("../../images/guide/icon-cutlery.svg") no-repeat center center;
-  background-size: contain;
-}
-
-/* иконка весы */
-.guide__item--scales .square::before {
-  content: "";
-  width: 32px;
-  height: 32px;
-  background: url("../../images/guide/icon-scales.svg") no-repeat center center;
-  background-size: contain;
-}
-
 .guide__description {
+  width: 200px;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -90,3 +53,40 @@
   margin-bottom: -42px;
 }
 
+/* icons */
+
+/* иконка листа */
+.guide__item--leaf .square::before {
+  content: "";
+  width: 30px;
+  height: 32px;
+  background: url("../../images/guide/icon-leaf.svg") no-repeat center center;
+  background-size: contain;
+}
+
+/* иконка стакана */
+.guide__item--glass .square::before {
+  content: "";
+  width: 26px;
+  height: 29px;
+  background: url("../../images/guide/icon-glass.svg") no-repeat center center;
+  background-size: contain;
+}
+
+/* иконка столовые приборы */
+.guide__item--cutlery .square::before {
+  content: "";
+  width: 25px;
+  height: 30px;
+  background: url("../../images/guide/icon-cutlery.svg") no-repeat center center;
+  background-size: contain;
+}
+
+/* иконка весы */
+.guide__item--scales .square::before {
+  content: "";
+  width: 27px;
+  height: 31px;
+  background: url("../../images/guide/icon-scales.svg") no-repeat center center;
+  background-size: contain;
+}
