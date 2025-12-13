@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Абраменков](https://up.htmlacademy.ru/adaptive-individual/2/user/2662363).
-* Наставник: [Виктория Никитина](https://up.htmlacademy.ru/profile/id1217273).
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
