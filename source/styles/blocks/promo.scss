@@ -1,0 +1,79 @@
+.promo {
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__container {
+  padding-bottom: 135px;
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.promo__container::before {
+  content: "";
+  width: 280px;
+  height: 270px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: url("../../images/promo/promo-can-mobile.png") no-repeat 0 0;
+  z-index: 10;
+}
+
+.promo__wrapper {
+  background: #4f4e4f url("../../images/promo/promo-cat-mobile.jpg") no-repeat center top;
+  padding: 26px 0 163px;
+  position: relative;
+}
+
+.promo__wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $thema;
+  opacity: 0.85;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+
+.promo__title {
+  margin: 0 auto;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  width: 300;
+  margin-bottom: 27px;
+  position: relative;
+  z-index: 10;
+}
+
+.promo__slogan {
+  margin: 0 auto;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  width: 300;
+  position: relative;
+  z-index: 10;
+}
+
+.promo__link {
+  margin: 0 20px;
+  display: block;
+  font-family: $oswald;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: $thema;
+  text-decoration: none;
+  padding: 9px 0 10px;
+}
