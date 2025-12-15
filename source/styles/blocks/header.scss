@@ -1,5 +1,14 @@
 .header {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 10px 15px;
+  padding-top: 65px;
+  background-image: url("../../images/logo/logo-text.svg");
+  background-position: 50% 23px;
+  background-repeat: no-repeat;
+  background-size: 101px 18px;
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  top: 7px;
+  left: 10px;
 }
