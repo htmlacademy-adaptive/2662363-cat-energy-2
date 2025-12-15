@@ -1,0 +1,73 @@
+.guide {
+  margin: 0 auto;
+  padding: 0 20px 20px;
+}
+
+.guide__title {
+  margin: 0 0 40px 0;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+
+.guide__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.guide__item {
+  position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+  margin-bottom: 18px;
+  padding-top: 2px;
+}
+
+.guide__item::before {
+  content: "";
+  background-color: $thema;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.guide__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.guide__item--leaf::before {
+  content: "";
+  background-size: 30px 32px;
+  background-image: url("../../images/guide/icon-leaf.svg");
+}
+
+.guide__item--glass::before {
+  content: "";
+  background-size: 26px 29px;
+  background-image: url("../../images/guide/icon-glass.svg");
+}
+
+.guide__item--cutlery::before {
+  content: "";
+  background-size: 25px 30px;
+  background-image: url("../../images/guide/icon-cutlery.svg");
+}
+
+/* иконка весы */
+.guide__item--scales::before {
+  content: "";
+  background-size: 27px 31px;
+  background-image: url("../../images/guide/icon-scales.svg");
+}
