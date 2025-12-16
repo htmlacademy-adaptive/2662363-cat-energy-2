@@ -409,8 +409,11 @@ body {
 .example__slider {
   width: 280px;
   min-height: 256px;
+  margin: 0;
+  padding: 0;
 }
 
 .slider {
   background-color: #ed0909;
+  color: #000000;
 }
