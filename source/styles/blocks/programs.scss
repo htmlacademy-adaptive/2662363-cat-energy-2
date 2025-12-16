@@ -34,7 +34,6 @@
   z-index: 2;
 }
 
-/* Иконка кота 1 slim */
 .programs__item--slim::before {
   content: "";
   position: absolute;
@@ -47,7 +46,6 @@
   z-index: 3;
 }
 
-/* Иконка кота 2 pro */
 .programs__item--pro::before {
   content: "";
   position: absolute;

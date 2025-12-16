@@ -1,0 +1,60 @@
+.example {
+  margin: 11px 0 0;
+  padding: 0;
+  background-color: #eaeaea;
+}
+
+.example__title {
+  margin: 0;
+  padding: 24px 0 0 20px;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.example__text {
+  width: 280px;
+  margin: 0;
+  padding: 40px 0 0 20px;
+  font-family: $lato;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.example__cost {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.example__price {
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.example__slider {
+  width: 280px;
+  min-height: 256px;
+}
+
+.slider {
+  background-color: #ed0909;
+}
