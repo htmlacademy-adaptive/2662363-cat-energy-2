@@ -9,11 +9,10 @@
 </head>
 
 <body class="page__body">
-
   <header class="header">
     <a class="header__logo" href="index.html">
       <picture>
-        <source media="(min-width:768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50" type="image/svg">
+        <source media="(min-width:768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50" type="image/svg+xml">
         <img class="header__logo" src="./images/logo/logo-mobile.svg" width="33" height="38" alt="текст сайта Кэт Энерджи">
       </picture>
     </a>
@@ -219,7 +218,9 @@
         <div class="product-card product-card--more">
           <div class="product-card__content">
             <h3 class="product-card__title">Показать еще 100500 товаров</h3>
-            <p class="product-card__more-text">На самом деле вкусов гораздо больше!</p>
+            <p class="product-card__more-text">
+              На самом деле вкусов гораздо больше!
+            </p>
             <button class="button product-card__button product-card__button--more" type="button">
               показать все
             </button>
@@ -311,8 +312,8 @@
 
       <form class="subscription-form" action="http://echo.htmlacademy.ru/" method="post">
         <div class="subscription-form__field">
-          <label class="subscription-form__label" for="subscription-form-email">Email</label>
-          <input class="subscription-form__input" id="subscription-form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required autocomplete="email">
+          <label class="subscription-form__label" for="subscription-email">Email</label>
+          <input class="subscription-form__input" id="subscription-email" type="email" name="email" placeholder="kuklachev@gmail.com" required autocomplete="email">
         </div>
 
         <button class="button subscription-form__submit" type="submit">

@@ -1,16 +1,45 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    padding-bottom: 20px;
+  }
 }
 
 .main-nav__toggle {
   width: 24px;
   height: 24px;
   border: none;
-  right: 20px;
-  top: -46px;
-  background-color: #000000;
+  right: 17px;
+  top: -45px;
+  background: url("../../icons/stack.svg#burger");
   color: #f2f2f2;
   position: absolute;
+  display: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  display: block;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  display: block;
+
+  background-image: url("../../icons/stack.svg#cross");
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -18,23 +47,62 @@
   padding: 0;
   list-style: none;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    border: none;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+
+.main-nav--closed .main-nav__list {
   display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #ffffff;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    position: static;
+    display: flex;
+  }
 }
 
 .main-nav__item {
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
 }
 
 .main-nav__link {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 20px;
-  line-height: 20;
+  line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
   display: block;
   text-align: center;
-  margin-top: -167px;
-  margin-bottom: -168px;
+  padding: 22px 5px 23px;
+
+  @media (min-width: $tablet) {
+    padding: 7px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }

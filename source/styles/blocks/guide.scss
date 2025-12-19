@@ -50,24 +50,24 @@
 .guide__item--leaf::before {
   content: "";
   background-size: 30px 32px;
-  background-image: url("../../images/guide/icon-leaf.svg");
+  background-image: url("../../icons/stack.svg#icon-leaf");
 }
 
 .guide__item--glass::before {
   content: "";
   background-size: 26px 29px;
-  background-image: url("../../images/guide/icon-glass.svg");
+  background-image: url("../../icons/stack.svg#icon-glass");
 }
 
 .guide__item--cutlery::before {
   content: "";
   background-size: 25px 30px;
-  background-image: url("../../images/guide/icon-cutlery.svg");
+  background-image: url("../../icons/stack.svg#icon-cutlery");
 }
 
-/* иконка весы */
+
 .guide__item--scales::before {
   content: "";
   background-size: 27px 31px;
-  background-image: url("../../images/guide/icon-scales.svg");
+  background-image: url("../../icons/stack.svg#icon-scales");
 }
