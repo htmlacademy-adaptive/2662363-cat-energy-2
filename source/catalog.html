@@ -9,11 +9,10 @@
 </head>
 
 <body class="page__body">
-
   <header class="header">
     <a class="header__logo" href="index.html">
       <picture>
-        <source media="(min-width:768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50" type="image/svg">
+        <source media="(min-width:768px)" srcset="./images/logo/logo-tablet.svg" width="174" height="50" type="image/svg+xml">
         <img class="header__logo" src="./images/logo/logo-mobile.svg" width="33" height="38" alt="текст сайта Кэт Энерджи">
       </picture>
     </a>
@@ -37,199 +36,222 @@
 
   <main class="main-container">
     <section class="products">
-      <h1 class="products__title">Каталог продукции</h1>
+      <div class="products-container">
+        <h1 class="products__title">Каталог продукции</h1>
+        <h2 class="visually-hidden">Товары</h2>
+        <ul class="products-list">
+          <!-- Карточка 1 -->
+          <li class="product-card">
+            <img class="product-card__image" width="68" height="86" src="#" alt="Cat energy pro курица 500гр">
+            <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
 
-      <div class="products__grid">
-        <!-- Карточка товара 1 -->
-        <article class="product-card">
-          <img class="product-card__image" src="images/product-1.jpg" alt="Упаковка корма Cat Energy PRO 500 г" width="280" height="180">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
-            <dl class="product-card__description">
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Масса</dt>
-                <dd class="product-card__property-value">500 г</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Вкус</dt>
-                <dd class="product-card__property-value">Курица</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Цена</dt>
-                <dd class="product-card__property-value">700 ₽</dd>
-              </div>
-            </dl>
-            <button class="button product-card__button" type="button">
+            <!-- Вес -->
+            <div class="product-card__item">
+              <span class="product-card__title">Масса</span>
+              <span class="product-card__data">500 г</span>
+            </div>
+
+            <!-- Вкус -->
+            <div class="product-card__item">
+              <span class="product-card__title">Вкус</span>
+              <span class="product-card__data">Курица</span>
+            </div>
+
+            <!-- Цена -->
+            <div class="product-card__item">
+              <span class="product-card__title">Цена:</span>
+              <span class="product-card__data">700 ₽</span>
+            </div>
+            <button class="product-card__button button button--order" type="submit">
               заказать
             </button>
-          </div>
-        </article>
+          </li>
 
-        <!-- Карточка товара 2 -->
-        <article class="product-card">
-          <img class="product-card__image" src="images/product-2.jpg" alt="Упаковка корма Cat Energy SLIM 1000 г" width="280" height="180">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
-            <dl class="product-card__description">
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Масса</dt>
-                <dd class="product-card__property-value">1000 г</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Вкус</dt>
-                <dd class="product-card__property-value">Курица</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Цена</dt>
-                <dd class="product-card__property-value">1000 ₽</dd>
-              </div>
-            </dl>
-            <button class="button product-card__button" type="button">
+          <!-- Карточка 2 -->
+          <li class="product-card">
+            <img class="product-card__image" width="68" height="86" src="#" alt="Cat energy pro курица 500гр">
+            <h2 class="product-card__title">Cat Energy
+              PRO
+              1000 г</h2>
+
+            <!-- Вес -->
+            <div class="product-card__item">
+              <span class="product-card__title">Масса</span>
+              <span class="product-card__data">1000 г</span>
+            </div>
+
+            <!-- Вкус -->
+            <div class="product-card__item">
+              <span class="product-card__title">Вкус</span>
+              <span class="product-card__data">Курица</span>
+            </div>
+
+            <!-- Цена -->
+            <div class="product-card__item">
+              <span class="product-card__title">Цена:</span>
+              <span class="product-card__data">1000 ₽</span>
+            </div>
+            <button class="product-card__button button button--order" type="submit">
               заказать
             </button>
-          </div>
-        </article>
+          </li>
 
-        <!-- Карточка товара 3 -->
-        <article class="product-card">
-          <img class="product-card__image" src="images/product-3.jpg" alt="Упаковка корма Cat Energy SLIM 500 г" width="280" height="180">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Cat Energy PRO 500 г</h3>
-            <dl class="product-card__description">
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Масса</dt>
-                <dd class="product-card__property-value">500 г</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Вкус</dt>
-                <dd class="product-card__property-value">Рыба</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Цена</dt>
-                <dd class="product-card__property-value">700 ₽</dd>
-              </div>
-            </dl>
-            <button class="button product-card__button" type="button">
+          <!-- Карточка 3 -->
+          <li class="product-card">
+            <img class="product-card__image" width="68" height="86" src="#" alt="Cat energy pro курица 500гр">
+            <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
+
+            <!-- Вес -->
+            <div class="product-card__item">
+              <span class="product-card__title">Масса</span>
+              <span class="product-card__data">500 г</span>
+            </div>
+
+            <!-- Вкус -->
+            <div class="product-card__item">
+              <span class="product-card__title">Вкус</span>
+              <span class="product-card__data">Рыба</span>
+            </div>
+
+            <!-- Цена -->
+            <div class="product-card__item">
+              <span class="product-card__title">Цена:</span>
+              <span class="product-card__data">700 ₽</span>
+            </div>
+            <button class="product-card__button button button--order" type="submit">
               заказать
             </button>
-          </div>
-        </article>
+          </li>
 
-        <!-- Карточка товара 4 -->
-        <article class="product-card">
-          <img class="product-card__image" src="images/product-4.jpg" alt="Упаковка корма Cat Energy SLIM 1000 г" width="280" height="180">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Cat Energy PRO 1000 г</h3>
-            <dl class="product-card__description">
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Масса</dt>
-                <dd class="product-card__property-value">1000 г</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Вкус</dt>
-                <dd class="product-card__property-value">Рыба</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Цена</dt>
-                <dd class="product-card__property-value">1000 ₽</dd>
-              </div>
-            </dl>
-            <button class="button product-card__button" type="button">
+          <!-- Карточка 4 -->
+          <li class="product-card">
+            <img class="product-card__image" width="68" height="86" src="#" alt="Cat energy pro курица 500гр">
+            <h2 class="product-card__title">Cat Energy
+              PRO
+              1000 г
+            </h2>
+
+            <!-- Вес -->
+            <div class="product-card__item">
+              <span class="product-card__title">Масса</span>
+              <span class="product-card__data">1000 г</span>
+            </div>
+
+            <!-- Вкус -->
+            <div class="product-card__item">
+              <span class="product-card__title">Вкус</span>
+              <span class="product-card__data">Рыба</span>
+            </div>
+
+            <!-- Цена -->
+            <div class="product-card__item">
+              <span class="product-card__title">Цена:</span>
+              <span class="product-card__data">1000 ₽</span>
+            </div>
+            <button class="product-card__button button button--order" type="submit">
               заказать
             </button>
-          </div>
-        </article>
+          </li>
 
-        <!-- Карточка товара 5 -->
-        <article class="product-card">
-          <img class="product-card__image" src="images/product-5.jpg" alt="Упаковка корма Cat Energy SLIM 500 г" width="280" height="180">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
-            <dl class="product-card__description">
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Масса</dt>
-                <dd class="product-card__property-value">500 г</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Вкус</dt>
-                <dd class="product-card__property-value">Гречка</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Цена</dt>
-                <dd class="product-card__property-value">400 ₽</dd>
-              </div>
-            </dl>
-            <button class="button product-card__button" type="button">
+          <!-- Карточка 5 -->
+          <li class="product-card">
+            <img class="product-card__image" width="68" height="86" src="#" alt="Cat energy pro курица 500гр">
+            <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
+
+            <!-- Вес -->
+            <div class="product-card__item">
+              <span class="product-card__title">Масса</span>
+              <span class="product-card__data">500 г</span>
+            </div>
+
+            <!-- Вкус -->
+            <div class="product-card__item">
+              <span class="product-card__title">Вкус</span>
+              <span class="product-card__data">Гречка</span>
+            </div>
+
+            <!-- Цена -->
+            <div class="product-card__item">
+              <span class="product-card__title">Цена:</span>
+              <span class="product-card__data">400 ₽</span>
+            </div>
+            <button class="product-card__button button button--order" type="submit">
               заказать
             </button>
-          </div>
-        </article>
+          </li>
 
-        <!-- Карточка товара 6 -->
-        <article class="product-card">
-          <img class="product-card__image" src="images/product-6.jpg" alt="Упаковка корма Cat Energy SLIM 1000 г" width="280" height="180">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Cat Energy SLIM 1000 г</h3>
-            <dl class="product-card__description">
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Масса</dt>
-                <dd class="product-card__property-value">1000 г</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Вкус</dt>
-                <dd class="product-card__property-value">Гречка</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Цена</dt>
-                <dd class="product-card__property-value">700 ₽</dd>
-              </div>
-            </dl>
-            <button class="button product-card__button" type="button">
+          <!-- Карточка 6 -->
+          <li class="product-card">
+            <img class="product-card__image" width="68" height="86" src="#" alt="Cat energy pro курица 500гр">
+            <h2 class="product-card__title">Cat Energy SLIM 1000 г</h2>
+
+            <!-- Вес -->
+            <div class="product-card__item">
+              <span class="product-card__title">Масса</span>
+              <span class="product-card__data">1000 г</span>
+            </div>
+
+            <!-- Вкус -->
+            <div class="product-card__item">
+              <span class="product-card__title">Вкус</span>
+              <span class="product-card__data">Гречка</span>
+            </div>
+
+            <!-- Цена -->
+            <div class="product-card__item">
+              <span class="product-card__title">Цена:</span>
+              <span class="product-card__data">700 ₽</span>
+            </div>
+            <button class="product-card__button button button--order" type="submit">
               заказать
             </button>
-          </div>
-        </article>
+          </li>
 
-        <!-- Карточка товара 7 -->
-        <article class="product-card">
-          <img class="product-card__image" src="images/product-7.jpg" alt="Упаковка корма Cat Energy SLIM 500 г" width="280" height="180">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Cat Energy SLIM 500 г</h3>
-            <dl class="product-card__description">
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Масса</dt>
-                <dd class="product-card__property-value">500 г</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Вкус</dt>
-                <dd class="product-card__property-value">Рис</dd>
-              </div>
-              <div class="product-card__property">
-                <dt class="product-card__property-name">Цена</dt>
-                <dd class="product-card__property-value">500 ₽</dd>
-              </div>
-            </dl>
-            <button class="button product-card__button" type="button">
+          <!-- Карточка 7 -->
+          <li class="product-card">
+            <img class="product-card__image" width="68" height="86" src="#" alt="Cat energy pro курица 500гр">
+            <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
+
+            <!-- Вес -->
+            <div class="product-card__item">
+              <span class="product-card__title">Масса</span>
+              <span class="product-card__data">500 г</span>
+            </div>
+
+            <!-- Вкус -->
+            <div class="product-card__item">
+              <span class="product-card__title">Вкус</span>
+              <span class="product-card__data">Рис</span>
+            </div>
+
+            <!-- Цена -->
+            <div class="product-card__item">
+              <span class="product-card__title">Цена:</span>
+              <span class="product-card__data">500 ₽</span>
+            </div>
+            <button class="product-card__button button button--order" type="submit">
               заказать
             </button>
-          </div>
-        </article>
+          </li>
 
-        <!-- Карточка "Показать еще" -->
-        <div class="product-card product-card--more">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Показать еще 100500 товаров</h3>
-            <p class="product-card__more-text">На самом деле вкусов гораздо больше!</p>
-            <button class="button product-card__button product-card__button--more" type="button">
+          <!-- Карточка 8 -->
+          <li class="product-card">
+            <img class="product-card__image" width="30" height="30" src="#" alt="Plus">
+            <h2 class="product-card__title">Показать еще 100500 товаров</h2>
+            <p class="product-card__description">
+              На самом деле вкусов гораздо больше!
+            </p>
+
+            <button class="product-card__button button button--show" type="submit">
               показать все
             </button>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="additional-products">
-      <div class="additional-products__header">
+      <div class="additional-products__container">
         <h2 class="additional-products__title">Дополнительные товары</h2>
       </div>
 
@@ -302,7 +324,7 @@
     </section>
 
     <section class="promo-and-news">
-      <div class="promo-and-news__header">
+      <div class="promo-and-news__container">
         <h2 class="promo-and-news__title">Акции и новинки</h2>
         <p class="promo-and-news__description">
           Подпишитесь на наши новости и не пропустите ни одного предложения!
@@ -311,8 +333,8 @@
 
       <form class="subscription-form" action="http://echo.htmlacademy.ru/" method="post">
         <div class="subscription-form__field">
-          <label class="subscription-form__label" for="subscription-form-email">Email</label>
-          <input class="subscription-form__input" id="subscription-form-email" type="email" name="email" placeholder="kuklachev@gmail.com" required autocomplete="email">
+          <label class="subscription-form__label" for="subscription-email">Email</label>
+          <input class="subscription-form__input" id="subscription-email" type="email" name="email" placeholder="kuklachev@gmail.com" required autocomplete="email">
         </div>
 
         <button class="button subscription-form__submit" type="submit">
