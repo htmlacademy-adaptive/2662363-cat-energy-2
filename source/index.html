@@ -103,66 +103,90 @@
         Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
         этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
-      <div class="example__list">
-        <dl class="example__description">
-          <dt class="example__value">5 кг</dt>
-          <dd class="example__option">Снижение веса</dd>
-        </dl>
 
-        <dl class="example__description">
-          <dt class="example__value">60 дней</dt>
-          <dd class="example__option">Затрачено времени</dd>
-        </dl>
-        <p class="example__cost">
-          Затраты на питание: <span class="example__price">15 000 РУБ.</span>
-        </p>
+      <ul class="example-list">
+        <li class="example-list__item">
+          <span class="example-list__value">5 КГ</span>
+          <span class="example-list__label">снижение веса</span>
+        </li>
+
+        <li class="example-list__item">
+          <span class="example-list__value">60 ДНЕЙ</span>
+          <span class="example-list__label">затрачено времени</span>
+        </li>
+      </ul>
+      <p class="example__costs">
+        Затраты на питание: <span class="example__price">15 000 РУБ.</span>
+      </p>
+
+      <div class="slider slider--before">
+        <ul class="slider__list">
+          <li class="slider__screen slider__screen--before">
+            <picture>
+              <img class="slider__image" src="./images/slider/before-m@1x.png" width="280" height="256" srcset="./images/slider/before-m@2x.png 2x" alt="Толстый кот">
+            </picture>
+          </li>
+          <li class="slider__screen slider__screen--after">
+            <picture>
+              <img class="slider__image" src="./images/slider/after-m@1x.png" srcset="./images/slider/after-m@2x.png 2x" width="280" height="256" alt="Худой кот">
+            </picture>
+          </li>
+        </ul>
+        <button class="slider__control" type="button">
+          <span class="visually-hidden">Переключить состояние слайдера</span>
+        </button>
       </div>
-
-      <div class="example__slider slider"></div>
     </section>
   </main>
 
-  <footer class="main-footer">
-    <section class="contacts">
+  <footer class="footer">
+    <section class="footer__contacts contacts">
       <div class="contacts__wrapper">
-        <h2 class="visually-hidden">Контактная информация</h2>
+        <h2 class="contacts__title visually-hidden">Контактная информация</h2>
         <p class="contacts__lead">
-          Приглашаем k&nbsp; сотрудничеству дилеров!
+          Приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
-        <address class="contacts__adress">
-          ул. Большая Конюшенная, д. 19/8<span class="contacts__city">Санкт-Петербург</span>
+        <address class="contacts__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </address>
       </div>
-      <div class="contacts__map-wrapper contacts__map-wrapper--nojs">
-        <img class="contacts__map-img" src="images/map-mobile.jpg" width="320" height="362" srcset="images/map-mobile@2x.jpg 2x" alt="Местоположение магазина на карте">
-        <!-- <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.82459333430506!2d30.323168583190302!3d59.93883330142265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1763988100660!5m2!1sru!2sru"
-          width="600" height="362" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+      <div class="contacts__map contacts__map--nojs">
+        <img class="contacts__map-image" src="./images/footer/map-mobile.jpg" srcset="./images/footer/map-mobile@2x.jpg 2x" width="640" height="724" alt="Местоположение магазина на карте">
       </div>
     </section>
-    <div class="main-footer__wrapper">
-      <a class="main-footer__logo-link" href="#">
-        <img class="main-footer__logo" src="images/logo-text-footer.svg" width="128" height="24" alt="Логотип магазина">
+
+    <div class="footer__bottom">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-image" src="./images/footer/footer-logo.svg" width="128" height="24" alt="Логотип магазина">
       </a>
-      <ul class="main-footer__social social">
+
+      <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="#">
-            <span class="visually-hidden">Мы в Вконтакте.</span>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в ВКонтакте">
+            <img class="social__icon" src="./images/footer/social-icon-vk.svg" width="28" height="22" alt="Иконка ВКонтакте">
+            <span class="visually-hidden">Мы в ВКонтакте</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">Мы в Ютубе.</span>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/@HTMLAcademyTV" aria-label="Мы в YouTube">
+            <img class="social__icon" src="./images/footer/social-icon-youtube.svg" width="28" height="22" alt="Иконка YouTube">
+            <span class="visually-hidden">Мы в YouTube</span>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">
-            <span class="visually-hidden">Мы в Телеграме.</span>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Мы в Telegram">
+            <img class="social__icon" src="./images/footer/social-icon-telegram.svg" width="28" height="22" alt="Иконка Telegram">
+            <span class="visually-hidden">Мы в Telegram</span>
           </a>
         </li>
       </ul>
-      <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+
+      <div class="academy-wrapper">
+        <a class="academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+          <img class="icon-academy" src="./images/footer/logo-academy.svg" width="27" height="34" alt="иконка академии">
+        </a>
+      </div>
     </div>
   </footer>
 

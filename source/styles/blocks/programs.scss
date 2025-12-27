@@ -38,7 +38,7 @@
   position: absolute;
   width: 36px;
   height: 50px;
-  background: url("../../icons/stack.svg#cat-slim") no-repeat 0 0;
+  background: url("../../icons/stack.svg#cat-slim") no-repeat center;
   background-size: contain;
   top: 20px;
   left: 26px;
@@ -59,7 +59,7 @@
 
 .programs__title {
   margin: 0 0 20px 70px;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -70,9 +70,9 @@
 }
 
 .programs__description {
-  margin: 0 0 19px;
-  padding: 0 14px 22px 0;
-  font-family: "Lato", sans-serif;
+  margin: 0 0 20px;
+  padding: 0 0 22px;
+  font-family: $lato;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -84,7 +84,7 @@
   display: inline-block;
   align-items: center;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -98,10 +98,10 @@
 .programs__link::after {
   content: "";
   display: inline-block;
-  width: 24px;
-  height: 12px;
+  width: 32px;
+  height: 11px;
   background: url("../../icons/stack.svg#icon-arrow");
   background-size: contain;
-  margin-bottom: 1px;
-  margin-left: 15px;
+  margin-bottom: 2px;
+  margin-left: 16px;
 }

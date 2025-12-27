@@ -1,12 +1,13 @@
 .example {
-  margin: 11px 0 0;
-  padding: 0;
+  margin: 9px auto 0;
+  padding: 143px 0 0;
   background-color: #eaeaea;
+  box-sizing: border-box;
 }
 
 .example__title {
-  margin: 0;
-  padding: 24px 0 0 20px;
+  margin: -118px 0 0 20px;
+  padding: 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
@@ -15,32 +16,61 @@
 }
 
 .example__text {
-  width: 280px;
   margin: 0;
-  padding: 40px 0 0 20px;
+  padding: 40px 17px 0 20px;
   font-family: $lato;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 }
 
-.example__list {
-  margin: 0;
-  padding: 0;
+.example-list {
+  margin: 0 auto 0 6px;
+  padding: 55px 20px 0 14px;
   list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+  justify-content: space-between;
 }
 
-.example__cost {
+.example-list__item {
+  flex: 1;
+  height: 57px;
+  text-align: center;
+  border-radius: 3px;
+  margin: -36px 0 0;
+  padding: 15px 20px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.example-list__value {
   font-family: $oswald;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 24px;
   text-align: center;
   color: #000000;
 }
 
+.example-list__label {
+  display: block;
+  padding: 6px 3px 0 1px;
+  background-color: #eaeaea;
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #444444;
+}
+
+.example__costs,
 .example__price {
+  margin: 34px 0 0;
+  padding: 0;
   font-family: $oswald;
   font-weight: 400;
   font-size: 14px;
@@ -49,12 +79,3 @@
   text-align: center;
   color: #000000;
 }
-
-.example__slider {
-  width: 280px;
-  min-height: 256px;
-  margin: 0;
-  background-color: #ed0808;
-}
-
-/* stylelint-disable-next-line block-no-empty */

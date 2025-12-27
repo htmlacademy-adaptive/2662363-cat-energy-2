@@ -1,0 +1,61 @@
+.footer__bottom {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.footer__logo {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footer__logo-image {
+  margin: -3px 0 0;
+  padding: 0 0 19px;
+  border-bottom: 1px solid #d9d9d9;
+  width: 280px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 17px 0 20px 73px;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.social__item {
+  margin: 0;
+  padding: 0;
+}
+
+.social__link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.academy-wrapper {
+  margin: -4px auto 0;
+  padding: 0;
+  display: flex;
+  border-top: 1px solid #d9d9d9;
+  width: 280px;
+}
+
+.academy-link {
+  margin: 0 10px s 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.icon-academy {
+  margin: 20px 0 -11px 136px;
+  padding: 0;
+}
