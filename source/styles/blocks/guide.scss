@@ -1,11 +1,11 @@
 .guide {
   margin: 0 auto;
-  padding: 0 20px 20px;
+  padding: 20px;
 }
 
 .guide__title {
-  margin: 0 0 40px;
-  font-family: "Oswald", sans-serif;
+  margin: -20px 0 40px;
+  font-family: $oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -22,9 +22,8 @@
 .guide__item {
   position: relative;
   padding-left: 80px;
-  min-height: 60px;
-  margin-bottom: 18px;
-  padding-top: 2px;
+  height: 60px;
+  margin-bottom: 20px;
 }
 
 .guide__item::before {
@@ -40,7 +39,7 @@
 }
 
 .guide__description {
-  font-family: "Lato", sans-serif;
+  font-family: $lato;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
