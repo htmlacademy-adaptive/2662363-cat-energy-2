@@ -1,53 +1,14 @@
 .footer {
   margin: 0 auto;
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+.footer__logo {
+  margin: 0 0 30px;
   padding: 0;
-}
-
-.footer__contacts {
-  background-color: #ffffff;
-  margin: 0 auto;
-  padding: 33px 0 0;
-}
-
-.contacts__wrapper {
-  margin: 0;
-  padding: 20px 0 0;
-  display: flex;
-  box-sizing: border-box;
-}
-
-.contacts__lead {
-  margin: -9px 0 0;
-  padding: 0 0 0 20px;
-  font-family: $oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-}
-
-.contacts__address {
-  margin: -9px 0 0 5px;
-  padding: 0;
-  font-family: $lato;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
-}
-
-.contacts__map {
-  margin: 0;
-  padding: 27px 0 0;
-  background-color: #ffffff;
-}
-
-.contacts__map-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
 }
