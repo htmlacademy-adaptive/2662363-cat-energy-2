@@ -1,0 +1,23 @@
+.academy {
+  margin: 0 auto 0 0;
+  padding: 20px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.academy__link {
+  margin: 0;
+  padding: 7px 0 0;
+  text-decoration: none;
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.academy__link-icon {
+  margin: 0;
+  padding: 0 0 0 139px;
+  text-decoration: none;
+}
